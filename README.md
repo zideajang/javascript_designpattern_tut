@@ -1,1 +1,4 @@
-this is demos for design pattern
+设计模式
+MVC 
+MVP
+MVVM

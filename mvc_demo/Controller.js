@@ -11,11 +11,13 @@ sparrow.Controller = function(){
     }
 
     this.increase = function(){
+        //业务逻辑
         model.add(1)
         model.notify();
     }
 
     this.decrease = function(){
+        //业务逻辑
         model.sub(1);
         model.notify();
     }
