@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MVVM 演示</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    
+    <script src="knockout.min.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="card text-center">
+            <div class="card-header">
+                MVVM 演示
+            </div>
+            <div id="root" class="card-block">
+                <h1 id="count" data-bind="text:val"></h1>
+                <h4 class="card-title">操作方法</h4>
+                <p class="card-text">点击“增加”按钮会增加计数器,点击“减少”按钮会减少计数器</p>
+                <button type="button" class="btn btn-primary" data-bind="click: increase">增加</button>
+                <button type="button" class="btn btn-danger" data-bind="click: decrease">减少</button>
+            </div>
+            <div class="card-footer text-muted">
+                小马编程
+            </div>
+        </div>
+    </div>
+    <script src="Model.js"></script>
+    <script src="ViewModel.js"></script>
+    </body>
+</html>
